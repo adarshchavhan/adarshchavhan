@@ -4,6 +4,9 @@ import { devices } from '../style/Constants'
 import { Icon } from '@iconify/react';
 
 const Contact = () => {
+    const MailUrl = import.meta.env.VITE_MAIL_URL;
+
+    console.log(MailUrl)
 
   return (
         <Wrapper className='wrapper' id='contact'>
@@ -18,7 +21,7 @@ const Contact = () => {
                 <a href="https://linkedin.com/in/adarshchavhan21">
                     <Icon icon="ri:linkedin-fill" width="18" />
                 </a>
-                <a href="https://github.com/adarshchavhan01">
+                <a href="https://github.com/adarshchavhan">
                 <Icon icon="ri:github-line" width="18" />
                 </a>
                 <a href="mailto:adarshchavhan01@gmail.com">
@@ -29,7 +32,7 @@ const Contact = () => {
                 </a>
                 </nav>
             </Left>
-            <Form data-aos='fade-up' action='https://formspree.io/f/xgejkanv' method='POST'>
+            <Form data-aos='fade-up' action={MailUrl} method='POST'>
                 <input type="text" name="name" placeholder='Name' required/>
                 <input type="email" name="email" placeholder='Email' required/>
                 <textarea rows={4} name="message" placeholder='Message' required/>
