@@ -18,7 +18,7 @@ const Contact = () => {
             <Left>
                 <p data-aos='fade-up'>One of my favorite things about developing web applications is the variety in projects. So if you want to collaborate or have some work for me , get in touch and tell me what you have in mind.</p>
                 <nav data-aos='fade-up'>
-                <a href="https://linkedin.com/in/adarshchavhan21">
+                <a href="https://linkedin.com/in/adarshchavhan">
                     <Icon icon="ri:linkedin-fill" width="18" />
                 </a>
                 <a href="https://github.com/adarshchavhan">
